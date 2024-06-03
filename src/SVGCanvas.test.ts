@@ -1,8 +1,8 @@
-import { createSVGFile } from "./SVGCanvas";
+import { writeSVGFile } from "./SVGCanvas";
 
 test('create new svg file', () => {
   try {
-    createSVGFile('test', 500, 500)
+    writeSVGFile('test', 500, 500)
     console.log('new File written successfully')
   } catch(err) {
     console.error(err)
